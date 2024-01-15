@@ -1,0 +1,89 @@
+ <!-- Toolbar -->
+ 
+ <div class="hearder-bar">
+  <img src="../assets/logo-rashel.png" alt="Logo" srcset="">
+  <div class="search-section">
+    <input type="search" class="search-bar" 
+    placeholder="Search...">
+    <a href="#">
+      <mat-icon style="text-decoration: none; color: #5d5d5d; margin-right: 10px; margin-left: 10px ;">search</mat-icon>
+    </a>
+  </div>
+
+
+
+   
+   <div class="greating">
+    <img class="profile-img" src="../assets/Arnon.png" alt="">
+    <p>Hello, Arnon</p>
+    
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+  
+   
+   </div>
+ </div>
+
+
+ <div class="toolbar" role="banner">
+    
+     
+    <div class="choices">
+      <div class="example-button-container">
+        <button mat-fab color="success">
+          <mat-icon><span class="material-symbols-outlined">
+          home
+            </span></mat-icon>
+        </button>
+      </div>
+      <div class="example-button-container">
+        <button mat-fab color="success">
+          <mat-icon><span class="material-symbols-outlined">
+            inventory
+            </span></mat-icon>
+        </button>
+      </div>
+      <div class="example-button-container">
+        <button mat-fab color="success">
+          <mat-icon class="material-symbols-outlined">
+            format_list_bulleted
+            </mat-icon>
+        </button>
+      </div>
+      <div class="example-button-container">
+        <button mat-fab color="success">
+          <mat-icon ><span class="material-symbols-outlined">
+            settings_accessibility
+            </span></mat-icon>
+        </button>
+      </div>
+  
+      <div class="example-button-container" style="margin-top: 150px;">
+        <button mat-fab color="success">
+          <mat-icon ><span class="material-symbols-outlined">
+            logout
+            </span></mat-icon>
+        </button>
+      </div>
+     
+    </div>
+    
+     
+    </div>
+
+  

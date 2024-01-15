@@ -1,0 +1,31 @@
+<section>
+  
+  <div mat-dialog-content>
+    <p>What's thr item name?</p>
+    <mat-form-field>
+      <mat-label>Add item name here!</mat-label>
+      <input matInput [(ngModel)]="data.name">
+    </mat-form-field>
+    <p>What's the amount of the item above??</p>
+    <mat-form-field>
+      <mat-label>Add the number of the item amount here!</mat-label>
+      <input matInput [(ngModel)]="data.amount">
+    </mat-form-field>
+    <p>How much is the price for the item per unit?</p>
+    <mat-form-field>
+      <mat-label>Add the price here!</mat-label>
+      <input matInput [(ngModel)]="data.price">
+    </mat-form-field>
+  
+  
+    <!-- <mat-form-field>
+      <input matInput [(ngModel)]="data.action">
+    </mat-form-field>
+   -->
+  
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+  </div>
+</section>

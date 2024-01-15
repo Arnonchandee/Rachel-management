@@ -1,0 +1,72 @@
+<section class="container">
+  <h1>CREATE A RACHEL ACCOUNT </h1>
+  <p>One account only, to access the Rachel Inventory <br> Management System <span><a href="#"
+        style="text-decoration: none; color: cadetblue;">Learn More</a></span> </p>
+
+  <!--
+                ...This is important and shows how form works,  to make form submitable, we give local reference by adding "#" then add the name of reference which is "f"  here, then assign it to Ngform, for this, it does give us automatically created object then this object installed into #f which is the local reference which you can only use in the template.
+                ...To get this to some method in our Typescript files, we will bind it with (ngSubmit)="onSubmit(f)" and pass local reference, (f), which you can name whatever you want!!! -->
+  <form class="form" #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+    <mat-form-field>
+      <!--
+            ...Using type="email" here will me Angular or Web brower know that it's a type of Email, and when you tap to this input section, you will see the Email suggestions that you used to input it, which will pop up for you to choose!!
+            ...Adding ngModel here to make Angular aware of it, without () means not yet use 2 ways binding here!!
+            ...one more thing that we need to add is the name attribute here witch is "name="Email"  -->
+      <input type="email" matInput placeholder="Your Email" ngModel name="email" email required #emailInPut="ngModel">
+
+      <!-- this code below give an error massages if the form of email is invalid, since Angular knows it's a type of email, and ***<mat-error>*** does't need to import, since it's part of ***<mat-form-field>*** -->
+      <mat-error *ngIf="emailInPut.hasError('required')">*Email must not be emptry</mat-error>
+      <!-- ^*ngIf="emailInPut.hasError('required') here means if emailInPut.hasError of "required" AKA required mean need input of Email, show this "This field much not be empty." when no Email input!! -->
+
+
+      <!-- Here below, with ! to get opposite, a bit tricky, means if emailInPut.hasError(required) has not yet the required, mean not yet fill in the input, don't display this, else if display!!-->
+      <mat-error *ngIf="!emailInPut.hasError('required')">Invalid Email </mat-error>
+    </mat-form-field>
+    <mat-form-field hintLabel="*Required 6 letters">
+      <input type="password" matInput placeholder="Your Password" ngModel name="password" required minlength="6"
+  #pwInput="ngModel">         
+      <!--  ^ #pwInput="ngModel" above here, like mentioned with # and name, means get local reference then  = "ngModel" means sending this to Angular, then the Angular will make it to be object form-->
+
+      <!-- value? with "?" below here means to not get an error in cases where this is somehow null!! -->
+      <mat-hint align="end">{{pwInput.value?.length}}/6</mat-hint>
+      <mat-error>*Password must contain 6 letters</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <!-- we sent local referece object to the directive which is [matdatepicker] see we bind it in [] too and this [matdatepicker] came from mat-datepicker-toggle and mat-datepicker below there-->
+      <input matInput placeholder="Your Birthdate" [matDatepicker]="picker" [max]="maxDate" ngModel name="birthdate">
+      <!-- [max]="maxDate", here we do validation for max the date for ex less than 18 years old can't signup. Then We bind [max] for typescript file funtion** -->
+
+      <!-- matSuffix here is display date in to this toggle-->
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <!-- we get local reference -->
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <!-- Checkbok here is not part of mat-form-field,so no need to wrap with it!! but, still, it's a part of form for sure, so we can bind it with ngModel!!  Checkbok works stand alone. -->
+    <mat-checkbox ngModel name="agree" required color="primary">Agree to submit</mat-checkbox>
+
+
+    <button class="submit-button" type="submit" mat-raised-button color="primary" [disabled]="f.invalid"> Create
+      Account</button>
+    <!-- ^ [disabled]="f.invalid" means disable this button if "F", object is invaild input!! -->
+  </form>
+   
+  <P>OR SIGN UP WITH</P>
+  
+  <div class="logo-socials">
+    <a href="#"><img src="../assets/Apple_logo_black.png" alt="" style="width: 21px; margin-right: 25px;"></a>
+    <a href="#"><img src="../assets/Gmail_icon_(2020).png" alt="GMAIL" style="width: 30px;" ></a>
+    <a href="#"><img src="../assets/facebook.png" alt=""  style="width: 28px;" ></a>
+    
+  </div>
+   
+  
+  <P><a href="#" style="color:cadetblue;" (click)="onChange()">I have an account!</a></P>
+
+  <p style="font-style: oblique; color: #6a6a6a;">By selecting Agree to Submit and Create Account,<br> you agree to our  <span><a href="#" style="color: cadetblue; text-decoration: none;">Terms</a></span> and  have read acknowledge <br>our <span><a href="#" style="color: cadetblue; text-decoration: none;">Global Privacy Statement.</a></span></p>
+</section>
+
+
+
+<!-- All of this is a good short code, you finished manything in this one place, no need to do separate or bind into Typescript or Javascript file for later functioned :) -->

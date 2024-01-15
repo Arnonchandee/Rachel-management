@@ -1,0 +1,54 @@
+<section>
+
+        <h1>LOG IN FOR RASHEL SYSTEM</h1>
+        <p>Welcome back, please log in to use RASHEL <br> Inventory system or <span><a href="#" style="color:cadetblue; text-decoration: none;" (click)="onChange()">sign up</a></span> </p>
+  
+
+
+    <form class="form" #B="ngForm" (ngSubmit)="onSubmit(B)">
+
+        <mat-form-field>
+         
+          <input type="email" matInput placeholder="Your Email" ngModel name="email" email required #emailInPut="ngModel">
+    
+          
+          <mat-error *ngIf="emailInPut.hasError('required')">*Email must not be emptry</mat-error>
+         
+     
+          <mat-error *ngIf="!emailInPut.hasError('required')">Invalid Email</mat-error>
+        </mat-form-field>
+        <mat-form-field hintLabel="*Required 6 letters">
+          <input type="password" matInput placeholder="Your Password" ngModel name="password" required minlength="6"
+            #pwInput="ngModel">
+            
+         
+          <mat-hint align="end">{{pwInput.value?.length}}/6</mat-hint>
+          <mat-error>*Password must contain 6 letters</mat-error>
+          
+        </mat-form-field>
+        
+    
+       
+        <mat-checkbox ngModel name="agree" required color="primary" >Agree to submit</mat-checkbox>
+    
+    
+        <button class="submit-button" type="submit" mat-raised-button color="primary" [disabled]="B.invalid" style="font-size: 18px; ">Log In</button>
+        
+      </form>
+       
+   
+        <p class="or-log-in" >OR LOG IN WITH</p>
+
+
+       <div class="logo-else-of-login">
+       
+        <a href="#"><img src="./assets/Apple_logo_black.png" alt="" width="27px" style="margin-right:30px ;"></a>
+        <a href="#"><img src="./assets/facebook.png" alt="" width="30px"></a>
+        <a href="#"><img src="./assets/Gmail_icon_(2020).png" alt="" width="32px"></a>
+       </div>
+
+       <p class="terms">By selecting Agree to Submit and Create Account, you agree <br>to our  <span><a href="#" style="color: cadetblue; text-decoration: none;">Terms</a></span> and  have read acknowledge our <span><a href="#" style="color: cadetblue; text-decoration: none;">Global Privacy Statement.</a></span></p>
+
+    
+    
+</section>

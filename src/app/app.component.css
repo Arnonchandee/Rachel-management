@@ -1,0 +1,49 @@
+.main-info {
+    display: inline-block;
+    flex-direction: row;
+    flex:1;
+    flex-direction: row;
+    margin-left: 170px;
+    font-family: 'Bodoni Modza', serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 100px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 98%;    
+}
+mat-sidenav-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.drower {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+}
+
+
+/* Phone Sizes */
+@media (max-width:480px) {
+
+}
+  /* iPads and tables */
+  @media (min-width:481px) and (max-width:1200px) {
+  }
+  
+  /* Laptops */
+  @media (min-width:1201px) and (max-width:1600px){
+    
+    }
+    
+/* 4K Monitor */
+  @media (min-width: 1601px){
+   
+    
+  }

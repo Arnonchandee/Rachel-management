@@ -1,0 +1,216 @@
+ section {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex: 1;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  a , button{
+    
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  header {
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-evenly;
+    gap: 4%;
+  }
+  
+  .mainpage {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 80px;
+    }
+  
+  h1 {
+    margin-left: 50px;
+    text-align: start;
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+    font: bold;
+    font-size: 3em;
+    line-height: 50px;
+    color: #000000;
+    text-shadow: 0 0 10px #cdcdcd, 0 0 10px #ffffff;
+  }
+  .submit1, .submit2 {
+    justify-content: center;
+    margin-left: 55px;
+    width: 300px;
+    height: 50px;
+  }
+
+  video {
+    opacity: .4;
+    position: fixed;
+    width: 100% auto;
+    height: 100% auto;
+    padding: 0;
+    margin: 0;
+  }
+  .logotext {
+    opacity: 1;
+  }
+  
+  a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+  }
+  
+  a:hover {
+    color: rgb(224, 102, 122);
+    ;
+  }
+  
+  p {
+    color: rgb(61, 61, 61);
+    font-size: 1.3rem;
+    margin-left: 55px;
+    line-height: 30px;
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+  
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 80px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.106), rgba(0, 0, 0, 0.491), rgb(0, 0, 0));
+    width: 100%;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .footer-text {
+    color: rgba(255, 255, 255, 0.667);
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: #757575;
+    text-align: center;
+  }
+
+  .spaninfo {
+    font-size:20px ;
+    color: rgb(146, 71, 71)
+  }
+
+/*Mobile Devices*/
+@media (max-width:480px) {
+  .button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  .submit1, .submit2 {
+    margin: 0;
+    width: 340px;
+    height: 45px;
+  }
+  .nav-text{
+    display: none;
+    
+    
+  }
+  .mainpage {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  p {
+    font-size:12px;
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+ }
+  .button-container {
+    position: relative;
+    justify-content: center;
+
+  }
+  .spaninfo{
+    font-size:12px;
+    color:brown;
+  }
+}
+
+/* iPads and tables */
+@media (min-width:481px) and (max-width:1200px) {
+  .nav-text{
+    display: none;
+  }
+  .mainpage {
+ flex: 0;
+ flex-grow: 0;
+  }
+
+  .btn-group {
+    z-index: 1;
+  }
+  p {
+    font-size:1rem;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    justify-content: start;
+    gap: 5px;
+  }
+  
+  .submit1, .submit2 {
+
+    max-width: 180px;
+    height: 45px;
+  }
+}
+/* Laptops */
+@media (min-width:1201px) and (max-width:1600px){
+  .navbur{
+  display: none;
+
+}
+
+}
+
+/* 4K Monitor */
+@media (min-width: 1601px){
+  .navbur{
+    display: none;
+  }
+  
+}
