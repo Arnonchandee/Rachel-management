@@ -30,7 +30,7 @@ img {
    font-size: larger;
    display: inline-flex; 
    flex-direction: row;
-   width:13%;
+   width:25%;
    margin-right: 30px;
 }
 .profile-img {
@@ -88,5 +88,5 @@ flex: 1;
 height:35px;
 border: 2px solid #a3a3a3;
 border-radius: 20px;
-margin-left: 50%;
+margin-left: 40%;
 }
