@@ -12,7 +12,7 @@ import { MatSidenavModule} from '@angular/material/sidenav'
 import {MatDividerModule} from '@angular/material/divider';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatBadgeModule} from '@angular/material/badge';
-
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 
@@ -20,9 +20,9 @@ import {MatBadgeModule} from '@angular/material/badge';
 
 
 @NgModule ({
-    imports: [MatButtonModule, MatIconModule, MatInputModule,  MatTableModule, MatDialogModule, MatFormFieldModule, MatDatepickerModule, MatNativeDateModule ,  MatCheckboxModule, MatSidenavModule,MatDividerModule, MatMenuModule,MatBadgeModule,],
+    imports: [MatButtonModule, MatIconModule, MatInputModule,  MatTableModule, MatDialogModule, MatFormFieldModule, MatDatepickerModule, MatNativeDateModule ,  MatCheckboxModule, MatSidenavModule,MatDividerModule, MatMenuModule,MatBadgeModule, MatProgressBarModule],
 
-    exports: [MatButtonModule, MatIconModule, MatInputModule, MatTableModule, MatDialogModule, MatFormFieldModule, MatDatepickerModule, MatNativeDateModule,MatCheckboxModule, MatSidenavModule,MatDividerModule , MatMenuModule,MatBadgeModule]
+    exports: [MatButtonModule, MatIconModule, MatInputModule, MatTableModule, MatDialogModule, MatFormFieldModule, MatDatepickerModule, MatNativeDateModule,MatCheckboxModule, MatSidenavModule,MatDividerModule , MatMenuModule,MatBadgeModule,MatProgressBarModule]
 })
 
 export class materialModule {}

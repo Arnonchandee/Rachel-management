@@ -1,7 +1,16 @@
  <!-- Toolbar -->
  
+ <div class="page-download-status">
+  <mat-progress-bar mode="indeterminate" color="basic"></mat-progress-bar>
+ 
+</div>
+ 
  <div class="hearder-bar">
-  <img src="../assets/logo-rashel.png" alt="Logo" srcset="">
+
+  <div class="logo">
+    <img src="../assets/logo-rashel.png" alt="Logo" srcset="">
+  </div>
+
   <div class="search-section">
     <input type="search" class="search-bar" 
     placeholder="Search...">
@@ -10,9 +19,6 @@
     </a>
   </div>
 
-
-
-   
    <div class="greating">
     <img class="profile-img" src="../assets/Arnon.png" alt="">
     <p>Hello, Arnon</p>
@@ -22,25 +28,26 @@
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
-        <span>Redial</span>
+        <mat-icon><span class="material-symbols-outlined">
+          logout
+          </span>
+          </mat-icon>
+        <span>Logout</span>
       </button>
-      <button mat-menu-item disabled>
-        <mat-icon>voicemail</mat-icon>
-        <span>Check voice mail</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
-        <span>Disable alerts</span>
+      <button mat-menu-item >
+        <mat-icon><span class="material-symbols-outlined">
+          edit
+          </span></mat-icon>
+        <span>Edit your details</span>
       </button>
     </mat-menu>
    </div>
+
  </div>
 
 
  <div class="toolbar" role="banner">
     
-     
     <div class="choices">
       <div class="example-button-container">
         <button mat-fab color="success">
