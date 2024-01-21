@@ -45,3 +45,23 @@ tr.example-element-row:not(.example-expanded-row):active {
 .example-element-description-attribution {
   opacity: 0.5;
 }
+
+/*Mobile Devices*/
+@media (max-width:480px) {
+ 
+}
+
+/* iPads and tables */
+@media (min-width:481px) and (max-width:1200px) {
+  
+}
+/* Laptops */
+@media (min-width:1201px) and (max-width:1600px){
+
+}
+
+/* 4K Monitor */
+@media (min-width: 1601px){
+
+  
+}

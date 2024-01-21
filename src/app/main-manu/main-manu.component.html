@@ -6,7 +6,6 @@
 </div>
  
  <div class="hearder-bar">
-
   <div class="logo">
     <img src="../assets/logo-rashel.png" alt="Logo" srcset="">
   </div>
@@ -14,10 +13,22 @@
   <div class="search-section">
     <input type="search" class="search-bar" 
     placeholder="Search...">
+
+    <input class="filter-bar" type="search" placeholder="Filter...">
+ 
     <a href="#">
-      <mat-icon style="text-decoration: none; color: #5d5d5d; margin-right: 10px; margin-left: 10px ;">search</mat-icon>
+      <mat-icon class="search-logo">search</mat-icon>
     </a>
   </div>
+  
+  <div class="demo-section">
+    <mat-icon style="font-size: 30px;" matBadge="1" matBadgeColor="warn">notifications</mat-icon>
+      <!-- Include text description of the icon's meaning for screen-readers -->
+      <span class="cdk-visually-hidden">
+      </span>
+  </div>
+
+
 
    <div class="greating">
     <img class="profile-img" src="../assets/Arnon.png" alt="">
@@ -27,6 +38,12 @@
       <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
+      <button mat-menu-item >
+        <mat-icon><span class="material-symbols-outlined">
+          edit
+          </span></mat-icon>
+        <span>Edit your details</span>
+      </button>
       <button mat-menu-item>
         <mat-icon><span class="material-symbols-outlined">
           logout
@@ -34,18 +51,10 @@
           </mat-icon>
         <span>Logout</span>
       </button>
-      <button mat-menu-item >
-        <mat-icon><span class="material-symbols-outlined">
-          edit
-          </span></mat-icon>
-        <span>Edit your details</span>
-      </button>
     </mat-menu>
    </div>
 
  </div>
-
-
  <div class="toolbar" role="banner">
     
     <div class="choices">
@@ -87,8 +96,6 @@
       </div>
      
     </div>
-    
-     
     </div>
 
   

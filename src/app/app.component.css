@@ -31,6 +31,10 @@ mat-sidenav-container {
 
 /* Phone Sizes */
 @media (max-width:480px) {
+    .main-info {
+        justify-content: center;
+     margin: 0;
+    }
 
 }
   /* iPads and tables */
