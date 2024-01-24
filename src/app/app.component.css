@@ -1,20 +1,26 @@
+.main-info {
+    width: 98%;
+}
 .main-info, app-events-list {
-    display: inline-block;
+    display: flex;
     flex-direction: row;
     flex:1;
     flex-direction: row;
-    margin-left: 170px;
+    margin-left: 180px;
     font-family: 'Bodoni Modza', serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Raleway', sans-serif;
-    margin-top: 100px;
+    margin-top: 140px;
 }
+
 section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     width: 98%;    
+    margin: 0;
+    padding: 0;
 }
 mat-sidenav-container {
     position: absolute;
@@ -29,25 +35,39 @@ mat-sidenav-container {
 }
 
 
+
 /* Phone Sizes */
 @media (max-width:480px) {
-    .main-info {
-        justify-content: center;
-     margin: 0;
-    }
-
+.main-info {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: fit-content;
+    margin-top:110px;
+    margin-left: 10px;
+}
 }
   /* iPads and tables */
   @media (min-width:481px) and (max-width:1200px) {
+
   }
   
   /* Laptops */
   @media (min-width:1201px) and (max-width:1600px){
-    
+    .main-info {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        width: 98%;
+        height: fit-content;
+        margin-top:130px;
+        margin-left: 230px;
+    }
     }
     
 /* 4K Monitor */
   @media (min-width: 1601px){
    
-    
+
   }

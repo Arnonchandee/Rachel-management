@@ -1,6 +1,3 @@
-table {
-  width: 100%;
-}
 
 tr.example-detail-row {
   height: 0;
@@ -46,9 +43,44 @@ tr.example-element-row:not(.example-expanded-row):active {
   opacity: 0.5;
 }
 
+.input-dialog{
+  display: flex;
+  height:50px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
 /*Mobile Devices*/
 @media (max-width:480px) {
- 
+  table {
+    margin-top: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .input-dialog {
+  display: inline;
+  height: fit-content;
+  width: 100%;
+  flex-direction: row;
+  margin: 0;
+  margin-bottom: 60px;
+
+  }
+
+  h1 {
+text-align: center;
+  }
+  .hearder-title-dialog {
+    width: 100%;
+    margin-bottom: 40px;
+
+   
+
+  }
+
+
 }
 
 /* iPads and tables */

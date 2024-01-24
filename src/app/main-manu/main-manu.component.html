@@ -22,7 +22,9 @@
   </div>
   
   <div class="demo-section">
-    <mat-icon style="font-size: 30px;" matBadge="1" matBadgeColor="warn">notifications</mat-icon>
+    <a href="#" style="text-decoration: none; color: rgb(55, 55, 55);">
+      <mat-icon style="font-size: 30px;" matBadge="1" matBadgeColor="warn">notifications</mat-icon>
+    </a>
       <!-- Include text description of the icon's meaning for screen-readers -->
       <span class="cdk-visually-hidden">
       </span>
@@ -33,11 +35,20 @@
    <div class="greating">
     <img class="profile-img" src="../assets/Arnon.png" alt="">
     <p>Hello, Arnon</p>
+  </div>
     
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
       <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
+      <div class="more-respone-options">
+        <button mat-menu-item >
+          <mat-icon><span class="material-symbols-outlined">
+            search
+            </span></mat-icon>
+          <span>Search</span>
+        </button>
+      </div>
       <button mat-menu-item >
         <mat-icon><span class="material-symbols-outlined">
           edit
@@ -52,7 +63,7 @@
         <span>Logout</span>
       </button>
     </mat-menu>
-   </div>
+   
 
  </div>
  <div class="toolbar" role="banner">
