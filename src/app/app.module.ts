@@ -16,6 +16,7 @@ import { WorkersManagmentComponent } from './workers-managment/workers-managment
 import { materialModule } from './material.module';
 import { MainManuComponent } from './main-manu/main-manu.component';
 import { TablePresetComponent } from './table-preset/table-preset.component';
+import { AddDialogMainComponent } from './table-preset/add-dialog/add-dialog-main.component';
 
 
 
@@ -37,7 +38,8 @@ import { TablePresetComponent } from './table-preset/table-preset.component';
     WelcomeComponent,
     MainManuComponent,
     TablePresetComponent,
-   
+    AddDialogMainComponent
+  
     
   ],
 

@@ -50,12 +50,16 @@ p {
 .demo-section {
    display: inline-flex;
    flex-direction: row;
-   width: 40px;
-   height: 40px;
-   flex: 2;
    justify-content: center;
    align-items: center;
    color: #434343;
+   background-color: #ffffff;
+   width: 45px;
+   height: 45px;
+   padding-top: 5px;
+   border-radius: 5px;
+   
+   
 }
 
 .hearder-bar {
@@ -82,7 +86,7 @@ p {
 .search-bar {
 width: 50px;
 flex: 1;
-height:45px;
+height: 50px;
 border: 2px dotted #a3a3a3;
 border-radius: 6px 0 0 6px   ;
 margin-left: 40%;
@@ -100,7 +104,7 @@ margin-left: 40%;
 .filter-bar {
     border: 2px solid #a3a3a3;
     width: 80px;
-    height: 45px;
+    height: 50px;
     border: 2px dotted #a3a3a3 ;
     border-radius:  0 6px 6px  0   ;
 }
@@ -144,8 +148,15 @@ mat-icon-button {
 }
   /* iPads and tables */
   @media (min-width:481px) and (max-width:1200px) {
-    input, .greating>p {
-        visibility: hidden;
+    input, .greating, .demo-section, .search-section{
+        display: none;
+    }
+    .hearder-bar {
+        height:100px;
+    }
+    .toolbar {
+        display: none;
+
     }
 
   }
