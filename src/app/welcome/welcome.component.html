@@ -1,8 +1,17 @@
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav class="drower" mode="over" #drawer role="navigation">
+    <app-login (onClick)="isLogin = false" *ngIf="isLogin"></app-login>
+    <app-signup (onClick)="isLogin = true" *ngIf="!isLogin"></app-signup>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+ 
 <video id="background-video" autoplay loop muted>
   <source src="../assets/Event-footages 2.m4v" type="video/mp4">
 </video>
 <section>
-  
+    
   <header>
   <a href="#"><img class="logotext" src="../assets/logo-rashel-white.png" alt="logo" style="height: 55px;"></a>
   <div class="et-space" style="flex: .5;"></div>
@@ -11,6 +20,8 @@
    <a class="nav-text" href="https://www.rashelevents.co.il/%d7%9e%d7%99%d7%aa%d7%95%d7%92-%d7%90%d7%99%d7%a8%d7%95%d7%a2%d7%99%d7%9d/">GALLERY</a>
    <a class="nav-text" href= "https://www.rashelevents.co.il/%d7%90%d7%95%d7%93%d7%95%d7%aa/">ABOUT</a>
    <button class="nav-text" onclick="window.location.href='https://www.rashelevents.co.il/%d7%a6%d7%95%d7%a8-%d7%a7%d7%a9%d7%a8/'  " mat-stroked-button style="color: aliceblue; border-color: white; font-size: 14px;">CONTECT US 🏳️‍🌈</button>
+
+  
 
    <div class="navbur">
      <button mat-button [matMenuTriggerFor]="menu" style="color: white; width:80px; height: 80px;"><mat-icon style="font-size: 25px;">menu</mat-icon>
@@ -24,7 +35,10 @@
      </mat-menu>
    </div>
    
+
   </header>
+  <iframe width="100%" height="60" src="https://rss.app/embed/v1/ticker/t09bKg0Br2sHOQy2" frameborder="0"></iframe>
+  <!-- <iframe class="il-news-widget" src="https://www.timesofisrael.com/liveblog-february-16-2024/" title="Israeli News Website"></iframe> -->
   <body>
    
     <div class="mainpage">
@@ -35,8 +49,8 @@
   
   
     <div class="button-container">
-      <button class="submit1" (click)="openSingnNav()" mat-raised-button>GET STARTED </button>
-      <button class="submit2" onclick="window.location.href= 'mailto:arnon.chande@gmail.com?subject=Help'" mat-raised-button>HELP ME!</button>
+      <button class="submit1" (click)="drawer.toggle()" mat-raised-button> GET STARTED </button>
+      <button class="submit2" onclick="window.location.href='mailto:arnon.chande@gmail.com?subject=Help'" mat-raised-button>HELP ME!</button>
     </div>
     </div>
   </body>
@@ -44,3 +58,6 @@
    <p class="footer-text"> Copyright 2023 © <span style="font-weight: bolder;">Rashel Boutique Event & More TLV</span></p>
   </footer>
 </section>              
+
+</mat-sidenav-content>
+</mat-sidenav-container>

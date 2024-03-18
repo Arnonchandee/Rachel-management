@@ -1,5 +1,5 @@
  <!-- Toolbar -->
- 
+
  <div class="page-download-status">
   <mat-progress-bar mode="indeterminate" color="basic"></mat-progress-bar>
  
@@ -55,11 +55,11 @@
           </span></mat-icon>
         <span>Edit your details</span>
       </button>
-      <button mat-menu-item>
+      <button mat-menu-item routerLink="/welcome">
         <mat-icon><span class="material-symbols-outlined">
           logout
           </span>
-          </mat-icon>
+          </mat-icon >
         <span>Logout</span>
       </button>
     </mat-menu>
@@ -69,36 +69,36 @@
  <div class="toolbar" role="banner">
     
     <div class="choices">
-      <div class="example-button-container">
+      <div class="example-button-container"  routerLink="/events-list">
         <button mat-fab color="success">
           <mat-icon><span class="material-symbols-outlined">
           home
             </span></mat-icon>
         </button>
       </div>
-      <div class="example-button-container">
-        <button mat-fab color="success">
+      <div class="example-button-container" routerLink="/process-requirements" >
+        <button mat-fab color="success" >
           <mat-icon><span class="material-symbols-outlined">
             inventory
             </span></mat-icon>
         </button>
       </div>
-      <div class="example-button-container">
-        <button mat-fab color="success">
+      <div class="example-button-container" routerLink="/stock-managment">
+        <button mat-fab color="success" >
           <mat-icon class="material-symbols-outlined">
             format_list_bulleted
             </mat-icon>
         </button>
       </div>
-      <div class="example-button-container">
-        <button mat-fab color="success">
+      <div class="example-button-container" [routerLink]="['/workers-managment', 'somethingElse']">
+        <button mat-fab color="success" >
           <mat-icon ><span class="material-symbols-outlined">
             settings_accessibility
             </span></mat-icon>
         </button>
       </div>
   
-      <div class="example-button-container" style="margin-top: 150px;">
+      <div class="example-button-container" style="margin-top: 150px;" routerLink="/welcome">
         <button mat-fab color="success">
           <mat-icon ><span class="material-symbols-outlined">
             logout
@@ -109,4 +109,4 @@
     </div>
     </div>
 
-  
+    <app-table-preset></app-table-preset>

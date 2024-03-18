@@ -9,14 +9,15 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { AddDialogEventsComponent } from './events-list/add-dialog-events/add-dialog-events.component';
 import { EventsListComponent } from './events-list/events-list.component';
 import { ProcessRequirementsComponent } from './process-requirements/process-requirements.component';
-import { AddDialogComponent } from './stock-managment/add-dialog/add-dialog.component';
 import { StockManagmentComponent } from './stock-managment/stock-managment.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { WorkersManagmentComponent } from './workers-managment/workers-managment.component';
 import { materialModule } from './material.module';
-import { MainManuComponent } from './main-manu/main-manu.component';
+import { MainsystemComponent } from './main-system-section/main-system-section.component';
 import { TablePresetComponent } from './table-preset/table-preset.component';
-import { AddDialogMainComponent } from './table-preset/add-dialog/add-dialog-main.component';
+
+
+
 
 
 
@@ -31,16 +32,14 @@ import { AddDialogMainComponent } from './table-preset/add-dialog/add-dialog-mai
     EventsListComponent,
     WorkersManagmentComponent,
     ProcessRequirementsComponent,
-    AddDialogComponent,
     AddDialogEventsComponent,
     SignupComponent,
     LoginComponent,
     WelcomeComponent,
-    MainManuComponent,
+    MainsystemComponent,
     TablePresetComponent,
-    AddDialogMainComponent
+ 
   
-    
   ],
 
   imports: [
@@ -50,7 +49,6 @@ import { AddDialogMainComponent } from './table-preset/add-dialog/add-dialog-mai
     ReactiveFormsModule,
     AppRoutingModule,
     materialModule,
-   
    
   
   ],

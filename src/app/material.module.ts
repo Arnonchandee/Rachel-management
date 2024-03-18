@@ -19,10 +19,12 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 
-@NgModule ({
-    imports: [MatButtonModule, MatIconModule, MatInputModule,  MatTableModule, MatDialogModule, MatFormFieldModule, MatDatepickerModule, MatNativeDateModule ,  MatCheckboxModule, MatSidenavModule,MatDividerModule, MatMenuModule,MatBadgeModule, MatProgressBarModule],
 
-    exports: [MatButtonModule, MatIconModule, MatInputModule, MatTableModule, MatDialogModule, MatFormFieldModule, MatDatepickerModule, MatNativeDateModule,MatCheckboxModule, MatSidenavModule,MatDividerModule , MatMenuModule,MatBadgeModule,MatProgressBarModule]
+
+@NgModule ({
+    imports: [MatButtonModule, MatIconModule, MatInputModule,  MatTableModule, MatDialogModule, MatFormFieldModule, MatDatepickerModule, MatNativeDateModule ,  MatCheckboxModule, MatSidenavModule,MatDividerModule, MatMenuModule,MatBadgeModule, MatProgressBarModule,MatSidenavModule, MatButtonModule],
+
+    exports: [MatButtonModule, MatIconModule, MatInputModule, MatTableModule, MatDialogModule, MatFormFieldModule, MatDatepickerModule, MatNativeDateModule,MatCheckboxModule, MatSidenavModule,MatDividerModule , MatMenuModule,MatBadgeModule,MatProgressBarModule,]
 })
 
 export class materialModule {}

@@ -1,4 +1,12 @@
+.page-download-status {
+    display: inline-flex;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
 
+}
 body {
     display: flex;
     padding: 0;
@@ -128,6 +136,15 @@ mat-icon-button {
     flex: 1;
 }
 
+app-table-preset{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 230px;
+    width: 80%;
+    height: fit-content auto;
+}
 
 /* Mobile Devices */
 

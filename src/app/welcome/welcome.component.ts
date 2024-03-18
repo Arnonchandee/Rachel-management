@@ -5,18 +5,9 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.css']
 })
-export class WelcomeComponent implements OnInit {
+export class WelcomeComponent {
+  isLogin: boolean = false;
 
-  @Output() openSignNav: EventEmitter<void> = new EventEmitter();
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  openSingnNav() {
-    this.openSignNav.emit();
-    
-  }
 
 }

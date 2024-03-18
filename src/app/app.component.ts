@@ -1,5 +1,7 @@
 import { Component, Output } from '@angular/core';
 
+
+
 @Output ()
 @Component({
   selector: 'app-root',
@@ -7,9 +9,6 @@ import { Component, Output } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Mei';
-  buttoning = true;
-  opensidenav = false;
-  isLogin: boolean = false;
+  title = 'Rachecl';
 
 }

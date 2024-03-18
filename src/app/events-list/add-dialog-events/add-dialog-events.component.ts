@@ -20,7 +20,7 @@ export class AddDialogEventsComponent {
 
 form: FormGroup;
 value: any;
-ngModel: any;
+
 
   constructor(
     private dialogRef: MatDialogRef<AddDialogEventsComponent>,
@@ -29,19 +29,19 @@ ngModel: any;
   ) {
     this.form = this.formBuilder.group({
       // Define your form controls and validators here
+      
     });
   }
   
-
-
   onSave() {
     if (this.form.valid) {
       // Pass the form data back to the main component
-      this.dialogRef.close({aa:this.form.value, ff:'', bb:this.data.date()});
+      this.dialogRef.close({aa:this.form.value, ff:'', bb:this.data.date() });
     }
   }
 
   onNoClick() {
     this.dialogRef.close();
+    
   }
 } 

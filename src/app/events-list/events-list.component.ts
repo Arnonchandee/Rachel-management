@@ -20,12 +20,12 @@ import { AddDialogEventsComponent } from './add-dialog-events/add-dialog-events.
 
 export class EventsListComponent {
 
-
+  title = 'Dashboard';
 
   eventsInfo!: string;
   eventsdetialinfo! :string;
   date!:Date;
-
+  
 
 
 

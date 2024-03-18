@@ -8,6 +8,14 @@
     flex-grow: 1;
     justify-content: space-between;
   }
+  
+  .il-news-widget {
+   display: fixed;
+   position: absolute;
+   margin-top: 60px;
+   width: 100%;
+   height: 100px;
+  }
   a , button{
     
     font-family: 'Bodoni Moda', serif;
@@ -120,6 +128,20 @@
     font-size:20px ;
     color: rgb(146, 71, 71)
   }
+
+    .drower {
+      width: 500px;
+      height: 100%;
+      max-width: 100%;
+      z-index: 99;
+
+  }
+
+.example-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
 /*Mobile Devices*/
 @media (max-width:480px) {

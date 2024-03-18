@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'app-main-manu',
-  templateUrl: './main-manu.component.html',
-  styleUrls: ['./main-manu.component.css']
+  selector: 'app-main-system-section',
+  templateUrl: './main-system-section.component.html',
+  styleUrls: ['./main-system-section.component.css']
 
 })
 
-export class MainManuComponent {
+export class MainsystemComponent {
   hidden = false;
 isdiabled: string|string[]|Set<string>|{ [klass: string]: any; }|null|undefined;
 

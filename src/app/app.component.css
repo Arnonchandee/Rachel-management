@@ -1,6 +1,7 @@
 .main-info {
     width: 98%;
 }
+
 .main-info, app-events-list {
     display: flex;
     flex-direction: row;
@@ -34,7 +35,10 @@ mat-sidenav-container {
     max-width: 100%;
 }
 
-
+app-table-preset {
+    height: fit-content;
+    width: 100%;
+}
 
 /* Phone Sizes */
 @media (max-width:480px) {
@@ -54,8 +58,8 @@ mat-sidenav-container {
     .main-info {
         margin: 0;
         margin-top: 150px;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
     }
 
   }
@@ -65,7 +69,7 @@ mat-sidenav-container {
     .main-info {
         margin: 0;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         width: 98%;
         height: fit-content;
         margin-top:130px;
